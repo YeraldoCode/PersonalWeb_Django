@@ -3,20 +3,25 @@
 
 
 
-
+{%block background%}{% load static %}{% static 'core/img/about-bg.jpg' %}{%endblock%}
+{% block headers %}<h1>Acerca de</h1><span class="subheading text-center">Backend Web Developer jr</span>{% endblock %}
 {% block content %}
-<h2>Acerca de</h2>
-<p>Me llamo Yeraldo y soy programador</p>
-<p>Me gusta programar en Python y Django</p>
-<p>Me gusta la música y tocar la guitarra</p>
-<p>Me gusta el cine y la lectura</p>
-<p>Me gusta la naturaleza y los animales</p>
-<p>Me gusta la fotografía y la pintura</p>
-<p>Me gusta la cocina y la comida sana</p>
-<p>Me gusta el deporte y el yoga</p>
-<p>Me gusta viajar y conocer otras culturas</p>
-<p>Me gusta la tecnología y la innovación</p>
-<p>Me gusta la educación y la formación</p>
-<p>Me gusta la solidaridad y la cooperación</p>
+<div class="container">
+    <div class="row">   
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{ %static 'core/img/avatar.jpg' %}" alt="">
+      </div>
+      <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Yeraldo Alexander Avila</h2>   
+        <p>Desarrollador Web FullStack Jr</p>
+        <p>Estudiante de Tecnologias de la información area desarrollo de software multiplataforma en la modalidad bis</p>
+        <p>Conocimientos en HTML, CSS, JavaScript, PHP, MySQL, Python, Django,
+         Git, Bootstrap</p>
+          <p>Intereses: Programación, Desarrollo Web, Videojuegos,
+             Música, Lectura, Deportes</p>
+      </div>
+    </div>  
+  </div>
+  <hr>
 {% endblock %}
 
