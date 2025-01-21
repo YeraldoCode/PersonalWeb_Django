@@ -5,11 +5,11 @@
 
 {%block background%}{% load static %}{% static 'core/img/about-bg.jpg' %}{%endblock%}
 {% block headers %}<h1>Acerca de</h1><span class="subheading text-center">Backend Web Developer jr</span>{% endblock %}
-{% block content %}
+{% block content %}{% load static %}
 <div class="container">
     <div class="row">   
       <div class="col-lg-3 col-md-4 offset-lg-1">
-        <img class="img-fluid avatar" src="{ %static 'core/img/avatar.jpg' %}" alt="">
+       <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
       </div>
       <div class="col-lg-7 col-md-8">
         <h2 class="section-heading">Yeraldo Alexander Avila</h2>   
@@ -22,6 +22,6 @@
       </div>
     </div>  
   </div>
-  <hr>
+
 {% endblock %}
 

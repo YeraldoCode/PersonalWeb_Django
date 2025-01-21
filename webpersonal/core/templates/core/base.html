@@ -58,16 +58,22 @@
       </div>
     </header>
 
+
+    <!--contenido-->
+    {% block content %}
+
+    {% endblock %}
+
     <!-- Pié de página -->
     {% load admin_modify %}
-
+  {% if request.path != '/' %}
+                        <hr>
+                    {% endif %}
     <footer>
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-md-10 mx-auto">
-                    {% if request.path != '/' %}
-                        <hr>
-                    {% endif %}
+                  
                     <ul class="list-inline text-center">
                         <li class="list-inline-item">
                             <a href="#">
@@ -100,10 +106,7 @@
         </div>
     </footer>
 
-    <!--contenido-->
-    {% block content %}
 
-    {% endblock %}
 
     
 
