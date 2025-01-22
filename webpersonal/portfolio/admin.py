@@ -3,5 +3,8 @@ from .models import Project
 
 
 # Register your models here.
-admin.site.register(Project)
+class ProjectAdmin(admin.ModelAdmin):
+    readonly_fields = ('created', 'updated')
+
+admin.site.register(Project, ProjectAdmin)
 
