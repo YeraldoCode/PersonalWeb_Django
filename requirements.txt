@@ -30,14 +30,6 @@ decorator==5.1.1
 defusedxml==0.7.1
 distro==1.9.0
 Django==5.1.5
-django-compressor==3.0
-django-crispy-forms==2.0.1
-django-crispy-tailwind==1.0.1
-django-environ==0.10.1  
-django-fontawesome==2.0.0
-django-js-asset==1.2.2
-django-mptt==0.14.0
-django-sass-processor==1.0.0
 docutils==0.21.2
 docxcompose==1.4.0
 docxtpl==0.19.1
